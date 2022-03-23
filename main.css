@@ -82,6 +82,9 @@ header nav .nav-section__right ul li{
     font-weight: var(--p);
     margin-right: 10px;
 }
+header nav .nav-section__right ul li:nth-child(3){
+    display: none;
+}
 /* -------------------------------------------------------------------------- main */
 
 /* --------------------------------------------- introduction */
@@ -100,6 +103,40 @@ main #introduction .main-inicio__text h1{
 main #introduction .main-inicio__text p{
     text-align: center;
     margin: 0 10px;
+}
+main #introduction .introduction-container__list{
+    margin-top: 20px;
+    padding: 0 15px;
+}
+main #introduction .introduction-container__list div{
+    margin: 10px 0;
+    display: flex;
+}
+main #introduction .introduction-container__list span{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+main #introduction .introduction-container__list .download-list__tv{
+    background-image: url('./assets/icons/icon-tv.svg');
+}
+main #introduction .introduction-container__list .icon-soccer{
+    background-image: url('./assets/icons/icon-soccer.svg');
+}
+main #introduction .introduction-container__list .icon-premium{
+    background-image: url('./assets/icons/icon-premium.svg');
+}
+main #introduction .introduction-container__list .icon-vod{
+    background-image: url('./assets/icons/icon-voh.svg');
+}
+main #introduction .introduction-container__list p{
+    margin: 0;
+    max-width: 240px;
+    text-align: initial;
 }
 main #introduction .main-inicio__text button{
     padding: 5px;
@@ -312,8 +349,8 @@ main #prices .prices-container__cards article .icon-vod{
 
 .btn-wsp{
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     bottom: 30px;
     right: 20px;
     background: #5dfa7b;
@@ -327,6 +364,6 @@ main #prices .prices-container__cards article .icon-vod{
     background-image: url('./assets/icons/icon-wsp.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
