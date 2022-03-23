@@ -1,0 +1,306 @@
+:root{
+    /* Fuente */
+    --poppins: 'Poppins', sans-serif;
+    /* Tamaño Fuentes */
+    --titulo: 3rem;
+    --subtitulo: 2rem;
+    --parrafo: 1.5rem;
+    /* Negrita */
+    --h1: 800;
+    --h2: 500;
+    --p: 300;
+
+    /* Colors */
+    --principal: #fff;
+    --secundary: #000;
+    --brand: #dc4800 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--poppins);
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: var(--titulo);
+    font-weight: var(--h1);
+}
+h2{
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+}
+p{
+    font-size: var(--parrafo);
+    font-weight: var(--p);
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+/* -------------------------------------------------------------------------- header */
+header{
+    background-color: var(--secundary);
+    color: var(--principal);
+    grid-area: header;
+}
+header nav{
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ------------------------------------------------------- left */
+header nav .nav-section__left .nav-left__picture{
+    width: 60px;
+    height: 40px;
+    margin: 10px 10px;
+}
+
+header nav .nav-section__left .nav-left__picture img{
+    width: 100%;
+    height: 100%;
+}
+/* --------------------------------------------- right */
+header nav .nav-section__right ul li{
+    font-size: var(--subtitulo);
+    font-weight: var(--p);
+    margin-right: 10px;
+}
+/* -------------------------------------------------------------------------- main */
+
+/* --------------------------------------------- introduction */
+main #introduction .main-inicio__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+}
+main #introduction .main-inicio__text h1{
+    text-align: center;
+    color: var(--brand);
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+main #introduction .main-inicio__text p{
+    text-align: center;
+    margin: 0 10px;
+}
+main #introduction .main-inicio__text button{
+    padding: 5px;
+    border: 1px solid var(--brand);
+    border-radius: 20px;
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    margin: 20px auto;
+    width: 250px;
+    box-shadow: 1px 2px 3px var(--brand);
+    color: var(--brand);
+    background-color: white;
+}
+/* --------------------------------------------- services */
+main #services{
+    width: 100%;
+    height: auto;
+    background-color: var(--secundary);
+    padding-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+main #services h2{
+    font-size: var(--titulo);
+    font-weight: var(--h1);
+    color: var(--brand);
+    text-align: center;
+}
+main #services article{
+    width: 270px;
+    border: 1px solid var(--brand);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow:  inset 0 0 15px var(--brand);
+}
+main #services article h2{
+    margin: 5px 0;
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    color: var(--principal);
+    text-align: center;
+}
+main #services article p{
+    font-size: var(--parrafo);
+    font-weight: var(--p);
+    color: white;
+    text-align: center;
+}
+/* --------------------------------------------- download */
+main #download{
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+}
+main #download h2{
+    font-size: var(--titulo);
+    font-weight: var(--h1);
+    color: var(--brand);
+    text-align: center;
+}
+main #download .download-available{
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    color: var(--secundary);
+    text-align: center;
+}
+main #download .download-list{
+    width: 250px;
+    margin: 10px auto;
+}
+main #download .download-list div{
+    display: flex;
+    margin: 10px 0;
+}
+main #download .download-list span{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+main #download .download-list__mobile span{
+    background-image: url('./assets/icons/icon-mobile.svg');
+}
+main #download .download-list__router span{
+    background-image: url('./assets/icons/icon-router.svg');
+}
+main #download .download-list__tv span{
+    background-image: url('./assets/icons/icon-tv.svg');
+}
+/*---------- Articles */
+main #download .download-container__cards article{
+    width: 270px;
+    border: 1px solid var(--brand);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+}
+main #download .download-container__cards article h2{
+    margin: 5px 0;
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    color: var(--secundary);
+    text-align: center;
+}
+main #download .download-container__cards article p{
+    font-size: var(--parrafo);
+    font-weight: var(--p);
+    color: var(--secundary);
+    text-align: center;
+}
+main #download .download-container__cards article div{
+    display: flex;
+    align-items: center;
+}
+main #download .download-container__cards article span{
+    background-image: url('./assets/icons/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+main #download .download-container__cards article button{
+    padding: 5px 10px;
+    border: 1px solid var(--brand);
+    border-radius: 15px;
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    margin: 10px auto;
+    width: auto;
+    box-shadow: 1px 2px 3px var(--brand);
+    color: var(--brand);
+    background-color: white;
+}
+/* --------------------------------------------- prices */
+main #prices{
+    width: 100%;
+    height: auto;
+    background-color: var(--secundary);
+    padding-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+main #prices h2{
+    font-size: var(--titulo);
+    font-weight: var(--h1);
+    color: var(--brand);
+    text-align: center;
+}
+main #prices .prices-container__cards article{
+    width: 270px;
+    border: 1px solid var(--brand);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    background-color: var(--principal);
+    box-shadow:  inset 0 0 15px var(--brand);
+}
+main #prices .prices-container__cards article h3{
+    margin: 5px 0;
+    font-size: var(--subtitulo);
+    font-weight: var(--h2);
+    color: var(--secundary);
+    text-align: center;
+}
+main #prices .prices-container__cards article div{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--brand);
+}
+main #prices .prices-container__cards article div:nth-child(8){
+    border: none;
+}
+main #prices .prices-container__cards article span{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    margin-right: 10px;
+}
+main #prices .prices-container__cards article .download-list__tv{
+    background-image: url('./assets/icons/icon-tv.svg');
+}
+main #prices .prices-container__cards article .icon-hd{
+    background-image: url('./assets/icons/icon-hd.svg');
+}
+main #prices .prices-container__cards article .download-list__mobile{
+    background-image: url('./assets/icons/icon-mobile.svg');
+}
+main #prices .prices-container__cards article .icon-premium{
+    background-image: url('./assets/icons/icon-premium.svg');
+}
+main #prices .prices-container__cards article .icon-vod{
+    background-image: url('./assets/icons/icon-voh.svg');
+}
+
