@@ -74,8 +74,11 @@ header nav .nav-section__left .nav-left__picture img{
     height: 100%;
 }
 /* --------------------------------------------- right */
+header nav .nav-section__right ul{
+    display: flex;
+}
 header nav .nav-section__right ul li{
-    font-size: var(--subtitulo);
+    font-size: var(--parrafo);
     font-weight: var(--p);
     margin-right: 10px;
 }
@@ -106,7 +109,7 @@ main #introduction .main-inicio__text button{
     font-weight: var(--h2);
     margin: 20px auto;
     width: 250px;
-    box-shadow: 1px 2px 3px var(--brand);
+    box-shadow:  inset 0 0 15px var(--brand);
     color: var(--brand);
     background-color: white;
 }
@@ -163,6 +166,7 @@ main #download .download-available{
     font-weight: var(--h2);
     color: var(--secundary);
     text-align: center;
+    margin: 15px 0;
 }
 main #download .download-list{
     width: 250px;
@@ -304,3 +308,25 @@ main #prices .prices-container__cards article .icon-vod{
     background-image: url('./assets/icons/icon-voh.svg');
 }
 
+/* ------------------------------------------------------------------- boton whatsapp */
+
+.btn-wsp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 20px;
+    background: #5dfa7b;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    box-shadow:  inset 0 0 15px var(--brand);
+    z-index: 100;
+}
+.btn-wsp span{
+    background-image: url('./assets/icons/icon-wsp.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+}
