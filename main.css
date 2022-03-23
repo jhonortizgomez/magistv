@@ -146,7 +146,7 @@ main #introduction .main-inicio__text button{
     font-weight: var(--h2);
     margin: 20px auto;
     width: 250px;
-    box-shadow:  inset 0 0 15px var(--brand);
+    box-shadow:  inset 0 0 5px var(--brand);
     color: var(--brand);
     background-color: white;
 }
