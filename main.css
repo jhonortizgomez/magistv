@@ -344,15 +344,23 @@ main #prices .prices-container__cards article .icon-premium{
 main #prices .prices-container__cards article .icon-vod{
     background-image: url('./assets/icons/icon-voh.svg');
 }
+main #prices h2:nth-child(3){
+    font-size: var(--titulo);
+    font-weight: var(--h1);
+    color: white;
+    text-align: initial;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
 
 /* ------------------------------------------------------------------- boton whatsapp */
 
 .btn-wsp{
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     bottom: 30px;
-    right: 20px;
+    right: 10px;
     background: #5dfa7b;
     border-radius: 50px;
     display: grid;
@@ -364,6 +372,6 @@ main #prices .prices-container__cards article .icon-vod{
     background-image: url('./assets/icons/icon-wsp.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
