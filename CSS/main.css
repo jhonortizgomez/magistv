@@ -22,6 +22,9 @@
     font-size: 62.5%;
     font-family: var(--poppins);
 }
+html{
+    scroll-behavior: smooth;
+}
 ul{
     margin: 0;
 }
@@ -77,10 +80,12 @@ header nav .nav-section__left .nav-left__picture img{
 header nav .nav-section__right ul{
     display: flex;
 }
-header nav .nav-section__right ul li{
+header nav .nav-section__right ul li a{
     font-size: var(--parrafo);
     font-weight: var(--p);
     margin-right: 10px;
+    text-decoration: none;
+    color: white;
 }
 header nav .nav-section__right ul li:nth-child(2){
     display: none;
@@ -104,15 +109,19 @@ main #introduction .main-inicio__text p{
     text-align: center;
     margin: 0 10px;
 }
-main #introduction .introduction-container__list{
+main #introduction .main-introduction__container{
+    display: flex;
+    flex-direction: column;
+}
+main #introduction .introduction-container__left{
     margin-top: 20px;
     padding: 0 15px;
 }
-main #introduction .introduction-container__list div{
+main #introduction .introduction-container__left div{
     margin: 10px 0;
     display: flex;
 }
-main #introduction .introduction-container__list span{
+main #introduction .introduction-container__left span{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,22 +130,26 @@ main #introduction .introduction-container__list span{
     height: 20px;
     margin-right: 10px;
 }
-main #introduction .introduction-container__list .download-list__tv{
-    background-image: url('./assets/icons/icon-tv.svg');
+main #introduction .introduction-container__left .download-list__tv{
+    background-image: url('../assets/icons/icon-tv.svg');
 }
-main #introduction .introduction-container__list .icon-soccer{
-    background-image: url('./assets/icons/icon-soccer.svg');
+main #introduction .introduction-container__left .icon-soccer{
+    background-image: url('../assets/icons/icon-soccer.svg');
 }
-main #introduction .introduction-container__list .icon-premium{
-    background-image: url('./assets/icons/icon-premium.svg');
+main #introduction .introduction-container__left .icon-premium{
+    background-image: url('../assets/icons/icon-premium.svg');
 }
-main #introduction .introduction-container__list .icon-vod{
-    background-image: url('./assets/icons/icon-voh.svg');
+main #introduction .introduction-container__left .icon-vod{
+    background-image: url('../assets/icons/icon-voh.svg');
 }
-main #introduction .introduction-container__list p{
+main #introduction .introduction-container__left p{
     margin: 0;
     max-width: 240px;
     text-align: initial;
+}
+main #introduction .main-inicio__text a{
+    display: inline-flex;
+    text-decoration: none;
 }
 main #introduction .main-inicio__text button{
     padding: 5px;
@@ -149,6 +162,9 @@ main #introduction .main-inicio__text button{
     box-shadow:  inset 0 0 5px var(--brand);
     color: var(--brand);
     background-color: white;
+}
+.introduction-container__right {
+    display: none;
 }
 /* --------------------------------------------- services */
 main #services{
@@ -223,13 +239,13 @@ main #download .download-list span{
     margin-right: 5px;
 }
 main #download .download-list__mobile span{
-    background-image: url('./assets/icons/icon-mobile.svg');
+    background-image: url('../assets/icons/icon-mobile.svg');
 }
 main #download .download-list__router span{
-    background-image: url('./assets/icons/icon-router.svg');
+    background-image: url('../assets/icons/icon-router.svg');
 }
 main #download .download-list__tv span{
-    background-image: url('./assets/icons/icon-tv.svg');
+    background-image: url('../assets/icons/icon-tv.svg');
 }
 /*---------- Articles */
 main #download .download-container__cards article{
@@ -330,27 +346,26 @@ main #prices .prices-container__cards article span{
     margin-right: 10px;
 }
 main #prices .prices-container__cards article .download-list__tv{
-    background-image: url('./assets/icons/icon-tv.svg');
+    background-image: url('../assets/icons/icon-tv.svg');
 }
 main #prices .prices-container__cards article .icon-hd{
-    background-image: url('./assets/icons/icon-hd.svg');
+    background-image: url('../assets/icons/icon-hd.svg');
 }
 main #prices .prices-container__cards article .download-list__mobile{
-    background-image: url('./assets/icons/icon-mobile.svg');
+    background-image: url('../assets/icons/icon-mobile.svg');
 }
 main #prices .prices-container__cards article .icon-premium{
-    background-image: url('./assets/icons/icon-premium.svg');
+    background-image: url('../assets/icons/icon-premium.svg');
 }
 main #prices .prices-container__cards article .icon-vod{
-    background-image: url('./assets/icons/icon-voh.svg');
+    background-image: url('../assets/icons/icon-voh.svg');
 }
-main #prices h2:nth-child(3){
+main #prices .price-callToAction{
     font-size: 2.5rem;
     font-weight: var(--h1);
     color: white;
     text-align: center;
     margin-bottom: 5px;
-    color: white;
 }
 
 /* ------------------------------------------------------------------- boton whatsapp */
@@ -369,9 +384,9 @@ main #prices h2:nth-child(3){
     z-index: 100;
 }
 .btn-wsp span{
-    background-image: url('./assets/icons/icon-wsp.svg');
+    background-image: url('../assets/icons/icon-wsp.svg');
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
     height: 40px;
-}
+}   

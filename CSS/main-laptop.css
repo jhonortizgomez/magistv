@@ -1,0 +1,56 @@
+:root{
+    /* Fuente */
+    --poppins: 'Poppins', sans-serif;
+    /* Tamaño Fuentes */
+    --titulo: 3rem;
+    --subtitulo: 2rem;
+    --parrafo: 1.5rem;
+    /* Negrita */
+    --h1: 800;
+    --h2: 500;
+    --p: 300;
+
+    /* Colors */
+    --principal: #fff;
+    --secundary: #000;
+    --brand: #dc4800 ;
+}
+/* -------------------------------------------------------------- main */
+main #introduction .main-introduction__container{
+    flex-direction: column;
+}
+.introduction-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.introduction-container__right{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 300px;
+}
+.introduction-container__right picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.services-container__cards{
+    display: flex;
+}
+.download-container__cards{
+    display: flex;
+}
+
+main #download .download-list{
+    min-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main #prices .prices-container__cards{
+    display: flex;
+}

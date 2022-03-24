@@ -1,0 +1,54 @@
+:root{
+    /* Fuente */
+    --poppins: 'Poppins', sans-serif;
+    /* Tamaño Fuentes */
+    --titulo: 3rem;
+    --subtitulo: 2rem;
+    --parrafo: 1.5rem;
+    /* Negrita */
+    --h1: 800;
+    --h2: 500;
+    --p: 300;
+
+    /* Colors */
+    --principal: #fff;
+    --secundary: #000;
+    --brand: #dc4800 ;
+}
+/* ----------------------------------------------------------- header */
+header nav .nav-section__right ul li a{
+    margin-right: 20px;
+}
+header nav .nav-section__right ul li:nth-child(2){
+    display: inline;
+}
+/* -------------------------------------------------------------- main */
+main #introduction .main-introduction__container{
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.introduction-container__right{
+    display: none;
+}
+
+main #prices .prices-container__cards{
+    display: grid;
+    grid-template-areas: 
+            "price1 price2"
+            "price3 price4";
+}
+main #prices .price-callToAction{
+    margin: 20px auto;
+}
+
+.btn-wsp{
+    width: 65px;
+    height: 65px;
+    right: 30px;
+}
+.btn-wsp span{
+    width: 50px;
+    height: 50px;
+}  
